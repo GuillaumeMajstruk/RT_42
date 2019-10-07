@@ -1,0 +1,89 @@
+theme 255 255 255
+power 40
+
+CAMERA :
+
+camera {
+position 0 -10 -50
+angles -16 0
+}
+
+LIGHTS :
+
+light {
+type AMBIANT
+direction 1 -1 1
+color 255 255 255
+power 1000
+}
+
+OBJECTS :
+
+plane {
+point 0 -64 0
+direction 0 1 0
+color 50 50 50
+diffuse 100
+brillance 0
+transparency 0
+reflect 0
+}
+
+cylinder {
+finite
+covered
+height 21
+radius 12
+color 255 255 255
+diffuse 1
+brillance 60
+reflect 10
+transparency 95
+refraction_index 100
+angles 0 -90
+position 0 -30 30
+}
+
+cylinder {
+finite
+covered
+height 30
+radius 4
+color 255 255 255
+diffuse 1
+brillance 60
+reflect 10
+transparency 95
+refraction_index 100
+angles 0 90
+position 0 -31 30
+}
+
+cone {
+pi_divider 3
+finite
+covered
+height 10
+center 0 -54 30
+color 255 255 255
+transparency 95
+refraction_index 100
+reflect 10
+brillance 60
+diffuse 1
+angles 0 90
+} 
+
+cylinder {
+finite
+height 27
+radius 1
+color 220 220 220
+diffuse 1
+transparency 95
+refraction_index 100
+brillance 10
+reflect 0
+angles 90 -65
+position 0 -30 30
+}
